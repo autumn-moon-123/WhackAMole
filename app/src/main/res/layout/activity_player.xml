@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_wakamole_text" />
+
+    <TextView
+        android:id="@+id/tv_playerscore"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/purple_custom"
+        android:textSize="32sp"
+        android:text="Score: 0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_playername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_custom"
+            android:textSize="24sp"
+            android:text="Avatar Colour"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_grey" android:text="Grey" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rb_blue" android:text="Blue" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rb_orange" android:text="Orange" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rb_green" android:text="Green" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rb_purple" android:text="Purple" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rb_pink" android:text="Pink" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:onClick="onclickSubmit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
