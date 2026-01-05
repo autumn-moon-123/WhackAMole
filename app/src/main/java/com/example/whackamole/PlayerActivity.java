@@ -62,7 +62,7 @@ public class PlayerActivity extends AppCompatActivity {
             avatarDrawable = ContextCompat.getDrawable(this, R.drawable.img_green_mole);
         } else {
             // Purple 和 Pink 默认用橙色或者普通地鼠图代替，防止报错
-            avatarDrawable = ContextCompat.getDrawable(this, R.drawable.img_mole);
+            avatarDrawable = ContextCompat.getDrawable(this, R.drawable.img_with_mole);
         }
 
         // 3. 创建玩家对象并存入排行榜
